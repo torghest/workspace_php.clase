@@ -11,5 +11,7 @@
         <a href="./06/index.php">06 -CONSULTAS DE SELECCIÓN CON PHP_MYSQL</a>
         <br/>
         <a href="./07/index.php">07 -FILTROS CON CONSULTAS DE SELECCIÓN CON PHP Y MYSQL</a>
+        <br/>
+        <a href="./08/index.php">08 -PAGINACIÓN DE REGISTROS CON PHP Y MYSQL</a>
     </body>
 </html>

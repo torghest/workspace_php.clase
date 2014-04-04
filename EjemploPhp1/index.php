@@ -13,5 +13,7 @@
         <a href="./07/index.php">07 -FILTROS CON CONSULTAS DE SELECCIÓN CON PHP Y MYSQL</a>
         <br/>
         <a href="./08/index.php">08 -PAGINACIÓN DE REGISTROS CON PHP Y MYSQL</a>
+        <br/>
+        <a href="./09/index.php">09 -SUBIDA DE FICHEROS AL SERVIDOR</a>
     </body>
 </html>

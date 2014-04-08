@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Arrastrar y soltar</title>
+    </head>
+    <body>
+        <style type="text/css">
+            .drop {
+                width: 100%;
+                padding: 20px;
+                height: 18px;
+                margin: 30px auto;
+                background: #f7F7F7;
+                border: 1px solid #333;
+            }
+            .drop span {
+                margin-right: 20px;
+                display: block;
+                float: left;
+            }
+            .drop a {
+                color: #FFF;
+                background: #FF4b33;
+                border-radius: 2px;
+                padding: 5px;
+            }
+        </style>
+        <div class="container_4">
+            <div class="grid_4" style="margin-top:15px">
+                <h1>Por favor posicione a los alumnos en el lugar que corresponda </h1>
+                <section id="user-levels">
+                    <div id="unassigned" class="drop" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false">
+                        <span>Alumnos</span>
+                        <a draggable="true" class="user" id="A28" ondragstart="dragUser(this, event)">Fernando</a>
+                        <a draggable="true" class="user" id="A29" ondragstart="dragUser(this, event)">Antonio H.</a>
+                        <a draggable="true" class="user" id="A30" ondragstart="dragUser(this,event)">Miguel</a>
+                        <a draggable="true" class="user" id="A31" ondragstart="dragUser(this, event)">Gonzalo</a>
+                        <a draggable="true" class="user" id="A32" ondragstart="dragUser(this, event)">Antonio G.</a>
+                        <a draggable="true" class="user" id="A1" ondragstart="dragUser(this, event)">Isaac G.</a>
+                        <a draggable="true" class="user" id="A2" ondragstart="dragUser(this, event)">Roberto</a>
+                        <a draggable="true" class="user" id="A3" ondragstart="dragUser(this, event)">Alfonso</a>
+                        <a draggable="true" class="user" id="A4" ondragstart="dragUser(this, event)">J. Pablo</a>
+                        <a draggable="true" class="user" id="A5" ondragstart="dragUser(this, event)">David</a>
+                        <a draggable="true" class="user" id="A6" ondragstart="dragUser(this, event)">Isaac S.</a>
+                        <a draggable="true" class="user" id="A7" ondragstart="dragUser(this, event)">Javier</a>
+                        <a draggable="true" class="user" id="A8" ondragstart="dragUser(this, event)">Carlos</a>
+                        <a draggable="true" class="user" id="A9" ondragstart="dragUser(this, event)">Dani</a>
+                        <a draggable="true" class="user" id="A10" ondragstart="dragUser(this, event)">Óscar</a>
+                        <a draggable="true" class="user" id="A11" ondragstart="dragUser(this, event)">Héctor</a>
+                        <a draggable="true" class="user" id="A12" ondragstart="dragUser(this, event)">Amelia</a>
+                        <a draggable="true" class="user" id="A13" ondragstart="dragUser(this, event)">Laura</a>
+                        <a draggable="true" class="user" id="A14" ondragstart="dragUser(this, event)">Gema</a>
+                        <a draggable="true" class="user" id="A17" ondragstart="dragUser(this, event)">Nuria</a>
+                        <a draggable="true" class="user" id="A15" ondragstart="dragUser(this, event)">Aurora</a>
+                        <a draggable="true" class="user" id="A16" ondragstart="dragUser(this, event)">Ana</a>
+                        <a draggable="false" class="user" id="A26" ondragstart="dragUser(this, event)">Alex</a>
+                    </div>
+
+                    <div id="Div11" class="drop" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false"><span>Ganadores de Paddel</span></div>
+                    <div id="Div12" class="drop" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false"><span>Tronistas</span></div>
+                    <div id="Div13" class="drop" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false"><span>Expertos en cerveza</span></div>
+                    <div id="Div1" class="drop" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false"><span>Apreta bicis</span></div>
+                    <div id="Div2" class="drop" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false"><span>Gigolos</span></div>
+                    <div id="Div3" class="drop" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false"><span>Reyes del ping pong</span></div>
+                    <div id="Div4" class="drop" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false"><span>Profesor de Flash/Blend</span></div>
+                    <div class="clear"></div>
+                </section>
+
+                <script type="text/javascript">
+                    function dragUser(user, event) {
+                        event.dataTransfer.setData('User', user.id);
+                    }
+
+                    function dropUser(target, event) {
+                        var user = event.dataTransfer.getData('User');
+                        target.appendChild(document.getElementById(user));
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+div {
+    border: 2px solid;
+    padding: 10px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgba(150,150,150,1);
+    position: absolute;
+    top: 320px;
+    left: calc(50% - 50px);
+}
+.rotar {
+    left: 580px;
+    top: 320px;
+    /* Chrome y Safari */
+    -webkit-transform: rotate(90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* IE 9 */
+    -ms-transform: rotate(45deg);
+    /* IE 8 */
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}

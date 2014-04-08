@@ -1,0 +1,12 @@
+#caja {
+    background-color: #FF0000;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    /*para Firefox*/
+    -moz-border-radius: 15px 15px 15px 15px;
+    /*para Safari y Chrome*/
+    -webkit-border-radius: 15px 15px 15px 15px;
+    /* para Opera */
+    border-radius: 15px 15px 15px 15px;
+}

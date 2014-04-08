@@ -1,0 +1,39 @@
+body {
+    background-color: #555555;
+}
+h1.titulo { 
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    //text-shadow: rgba(0 , 0 , 0,0.9) 0px 0px 6px;
+    z-index: 2;
+}
+h1.titulo2 {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: rgba(0 , 0 , 256,0.0);
+    text-shadow: rgba(0 , 0 , 256,0.5) 0px 0px 4px;
+    z-index: 0;
+}
+div.a{
+    position: absolute;
+    border: 2px solid rgba(0,256,0,0.5);
+    background-color: rgba(175,256,175,0.5);
+    width: 252px;
+    height: 30px;
+    top: 27px;
+    left: 25px;
+    z-index: 1;
+}
+div.b{
+    position: absolute;
+    border: 2px solid rgba(256,256,0,0.5);
+    background-color: rgba(256,256,175,0.5);
+    width: 252px;
+    height: 30px;
+    top: 42px;
+    left: 35px;
+    z-index: -1;
+}

@@ -1,0 +1,24 @@
+.fondo {
+    /* Para Navegadores que no soportan 
+        RGBa mostramos color sólido sin transparencia */
+    background: rgb(0, 0, 0);
+    /* Para navegadores que soportan RGBa mostramos el 
+        color sólido con un 50% de opacidad */
+    background: rgba(0, 0, 0, 0.5);
+}
+.fondo2{
+    background: rgb(0, 0, 0);
+}
+.micaja { 
+    color: rgb(235,235,235); 
+    color: rgba(255,255,255,0.99); 
+    background-color: rgb(153,153,153); 
+    background-color: rgba(0,0,0,0.66); 
+    border-color: rgb(235,235,235); 
+    border-color: rgba(255,255,255,0.99); 
+}
+.micaja2 { 
+    color: rgb(255,255,255); 
+    background-color: rgb(0,0,0); 
+    border-color: rgb(255,255,255); 
+ }

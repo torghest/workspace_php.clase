@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function guardarenSession() {
+            var valor = document.getElementById('txtDatos').value;
+            sessionStorage.setItem('Datos', valor);
+        }
+        function recuperarSession() {
+            var valor = sessionStorage.getItem('Datos');
+            document.getElementById('txtDatos').value = valor;
+        }
+        function borrarenSession() {
+            sessionStorage.removeItem('Datos');
+            document.getElementById('txtDatos').value = "";
+        }
+        function guardar() {
+            var miDato = document.getElementById('miInput').value;
+            localStorage.setItem('miDato', miDato);
+        }
+        function recuperar() {
+            var miDato = localStorage.getItem('miDato');
+            document.getElementById('miInput').value = miDato;
+        }
+</script>
+</head>
+<body>
+<input type="text" id="txtDatos"/>
+<input type="button" onclick="guardarenSession()" value="GuardarServer"/>
+<input type="button" onclick="recuperarSession()" value="RecuperarServer"/>
+<input type="button" onclick="borrarenSession()" value="BorrarServer"/>
+<hr/>
+<input type="text" id="miInput"/>
+<input type="button" onclick="guardar()" value="GuardarLocal"/>
+<input type="button" onclick="recuperar()" value="RecuperarLocal"/>
+
+</body>
+</html>

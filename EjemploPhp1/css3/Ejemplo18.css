@@ -1,0 +1,10 @@
+.fondo {
+    background: url(imagenes/dostontosmuytontos.jpg) top right no-repeat,
+          url(imagenes/A_TODO_GAS.JPG) bottom left 225px no-repeat, 
+          url(imagenes/ABRE_LOS_OJOS.JPG) top 25px left no-repeat;
+}
+.relleno {
+    border: 1px solid #FF00FF;
+    width: available;
+    height: 500px;
+}

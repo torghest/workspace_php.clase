@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+
+    <video width="640" height="360" poster="video/dostontosmuytontos.jpg" controls autoplay>
+       <!--  El atributo “poster”, muestra una imagen al empezar, hasta que no se le da al “play”-->
+        <source src="video/PeliHTML5.mp4" type="video/mp4"  /><!-- Safari , IE9 -->
+        <source src="video/PeliHTML5.webm" type="video/webm" /><!-- Chrome10+, Ffx4+, Opera10.6+ -->
+        <source src="video/PeliHTML5.ogv" type="video/ogg"  /><!-- Firefox3.6+ / Opera 10.5+ -->
+        <object width="640" height="360" type="application/x-shockwave-flash" data="player.swf">
+            
+            <param name="movie" value="PeliHTML5.swf" />
+            <param name="flashvars"
+                value="autostart=false&controlbar=over&image=poster.jpg&file=archivo.mp4" />
+            <!-- Imágen antes de la carga -->
+            <img src="video/dostontosmuytontos.jpg" width="640" height="360" alt="alt" title="title" />
+        </object>
+    </video>
+
+</body>
+
+</html>
